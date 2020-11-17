@@ -6,15 +6,15 @@ import java.util.List;
 /**
  * Created by Niklas on 2016-02-07.
  */
-public class AnimalShelter {
+public class AnimalShelter<A> {
 
-    private List<Animal> animalsInShelter = new ArrayList<>(20);
+    private List<A> animalsInShelter = new ArrayList<>(20);
 
-    Animal adoptAnimal(){
+    A adoptAnimal(){
         return animalsInShelter.remove(0);
     }
 
-    void putAnimal(Animal animal){
+    void putAnimal(A animal){
         animalsInShelter.add(animal);
     }
 
